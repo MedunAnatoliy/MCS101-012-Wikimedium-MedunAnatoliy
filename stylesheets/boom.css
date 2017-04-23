@@ -1,0 +1,137 @@
+boom h1,
+boom h2,
+boom h3,
+boom p,
+boom ul,
+boom blockquote {
+  width: 700px;
+  margin: 0 auto;
+}
+
+boom h1,
+boom h2,
+boom h3 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+}
+
+boom h1 {
+  margin-top: 67px;
+  font-size: 38px;
+  line-height: 45px;
+}
+
+boom h1 + p {
+  margin-top: 8px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgba(0,0,0,.4);
+}
+
+boom h1 + p + p {
+  margin-top: 30px;
+}
+
+boom h2 {
+  margin-top: 43px;
+  font-size: 32px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, .8);
+}
+
+boom h2 + p,
+boom h2 + blockquote {
+  margin-top: 7px;
+}
+
+boom h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgba(0, 0, 0, .8);
+}
+
+boom h3 + p,
+boom h3 + blockquote {
+  margin-top: 6px;
+}
+
+boom p,
+boom blockquote,
+boom li {
+  margin-top: 29px;
+  font-size: 20px;
+  line-height: 34px;
+  color: rgba(0,0,0,.4);
+}
+
+boom blockquote {
+  position: relative;
+  font-style: italic;
+}
+
+boom blockquote::before {
+  content:'';
+  display: block;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background: black;
+}
+
+boom li {
+  margin-top: 16px;
+  margin-left: 28px;
+  padding-left: 2px;
+  list-style-type: disc;
+}
+
+boom img {
+  display: block;
+  width: 1020px;
+  margin: 79px auto 0;
+}
+
+boom img + h2 {
+  margin-top: 79px;
+}
+
+boom img + p,
+boom img + blockquote,
+boom img + ul {
+  margin-top: 77px;
+}
+
+boom h2 + img {
+  margin-top: 82px;
+}
+
+boom h3 + img {
+  margin-top: 81px;
+}
+
+@media all and (max-width: 1020px) {
+  boom img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  boom > * {
+    width: calc(100% - 40px);
+  }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  body {
+    min-width: 320px;
+  }
+
+  boom > * {
+    width: calc(100% - 40px);
+  }
+}

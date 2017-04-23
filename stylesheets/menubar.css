@@ -1,0 +1,44 @@
+.menubar{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50px;
+  background: white;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+.postsPage.menubar,
+.landingPage .menubar {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+.landingPage .menubar {
+  min-width: 768px;
+  max-width: 1440px;
+}
+
+.logo {
+  display: block;
+  width: 180px;
+  height: 16px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+}
+
+.about {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.about:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
